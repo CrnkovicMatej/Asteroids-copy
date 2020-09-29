@@ -36,7 +36,6 @@
 #
 # Output
 # ------
-#
 # This script defines the following variables:
 # - For each specified module XXX (system, window, graphics, network, audio, main):
 #   - SFML_XXX_LIBRARY_DEBUG:   the name of the debug library of the xxx module (set to SFML_XXX_LIBRARY_RELEASE is no debug version is found)
