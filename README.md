@@ -14,6 +14,7 @@ igre.
 
 
 #IGRANJE
+
 Strelicom prema gore igrač pokreće letjelicu koja zatim ubrzava do maksimalne brzine.
 
 Strelicom prema dolje igrač postepeno usporava i u konačnici zaustavlja letjelicu.
