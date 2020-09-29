@@ -1,7 +1,5 @@
 # Asteroids sa _stanjima_
-Igra započinje pozdravnim ekranom. Na primjer:
-
-![welcome screen](./doc/welcome_screen.png)
+Igra započinje pozdravnim ekranom. 
 
 Nakon što se pritisne bilo koja tipka počinje igra.
 Igrač dobiva ekran igre:
@@ -15,31 +13,16 @@ igre.
 ![score screen](./doc/score_screen.png)
 
 
-## Konačni automat
+#IGRANJE
+Strelicom prema gore igrač pokreće letjelicu koja zatim ubrzava do maksimalne brzine.
 
-Vidmo da naša aplikacija ima niz stanja u kojima se ponaša na različite
-načine. U igri mora reagirati na strelice i razmaknicu, u ostalim stanjima reagira
- na  `Return` i `Escape` ili na bilo koju tipku. Svako stanje radi drukčije
- iscrtavanje. Iz jednog stanja se može prijeći u  drugo stanje
- prema _pravilima igre_. Takva se struktura naziva _konačni automat_
- i u našem slučaju je vrlo jednostavna i može se prikazati na ovaj način:
+Strelicom prema dolje igrač postepeno usporava i u konačnici zaustavlja letjelicu.
 
- ![fsm](./doc/FSM.png)
+Strelicama prema lijevo/desno igrač rotira letjelicu u lijevo/desno.
 
+SPACEom igrač "puca" i razara asteroide.
 
-
-
-
-## _State_ oblikovni obrazac
-
-Umjesto da implementiramo logiku različitih stanja u jednoj velikoj if
-naredbi stavit ćemo logiku svakog pojedinog stanja u zasebnu klasu. Time dobivamo
-sljedeću strukturu:
-
- ![state](./doc/state.png)
-
-
-![gamestate](./doc/gamestate.png)
+Igrač ima 3 života. Živote gubi sudarajući se s asteroidima.
 
  
 
